@@ -18,8 +18,8 @@
 		<Description>a simple high-performance string encryption and decryption tool based on given symmetric key</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageVersion>1.0.1</PackageVersion>
-		<PackageLicenseFile>E:\Fondness\Enigma\LICENSE</PackageLicenseFile>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageLicenseUrl>https://github.com/etammam/enigma/blob/master/LICENSE</PackageLicenseUrl>
 	</PropertyGroup>
 
 	<ItemGroup>
