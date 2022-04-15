@@ -17,7 +17,7 @@
 		<PackageIcon>binary_icon_211573.png</PackageIcon>
 		<Description>a simple high-performance string encryption and decryption tool based on given symmetric key</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageVersion>1.0.0</PackageVersion>
+		<PackageVersion>1.0.1</PackageVersion>
 	</PropertyGroup>
 
 	<ItemGroup>
