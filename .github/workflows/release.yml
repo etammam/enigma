@@ -21,7 +21,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Publish to NuGet
-      uses: brandedoutcast/publish-nuget@v2
+      uses: etammam/publish-nuget@v2
       with:
         PROJECT_FILE_PATH: src/Enigma.String/Enigma.String.csproj
         VERSION_REGEX: '^\s*<PackageVersion>(.*)<\/PackageVersion>\s*$'
