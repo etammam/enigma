@@ -1,4 +1,4 @@
-name: .NET
+name: Fondness Enigma - CI
 
 on:
   push:
