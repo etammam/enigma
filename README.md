@@ -1,6 +1,6 @@
 # Enigma
-secure string with encryption based on symmetric key
-##Usage
+a simple high-performance string encryption and decryption tool based on given symmetric key  
+## Usage
 install this pakage using nuget package manager   
 `PM> install-package Fondness.Enigma`   
 configure you application to use the engima encryption engin by configure the core service
