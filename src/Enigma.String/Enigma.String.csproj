@@ -1,41 +1,41 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <SignAssembly>False</SignAssembly>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>Fondness.Enigma</PackageId>
-    <Authors>Eslam M. Tammam</Authors>
-    <Company>Fondness Open Source Contributers</Company>
-    <RepositoryUrl>https://github.com/etammam/enigma</RepositoryUrl>
-    <PackageTags>Encrypt, Decrypt, String, Cipher, Security</PackageTags>
-    <NeutralLanguage>en</NeutralLanguage>
-    <ApplicationIcon>binary_icon_211573.ico</ApplicationIcon>
-    <Copyright>© Fondness 2022</Copyright>
-    <PackageIcon>binary_icon_211573.png</PackageIcon>
-    <Description>a simple high-performance string encryption and decryption tool based on given symmetric key</Description>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<SignAssembly>False</SignAssembly>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Fondness.Enigma</PackageId>
+		<Authors>Eslam M. Tammam</Authors>
+		<Company>Fondness Open Source Contributers</Company>
+		<RepositoryUrl>https://github.com/etammam/enigma</RepositoryUrl>
+		<PackageTags>Encrypt, Decrypt, String, Cipher, Security</PackageTags>
+		<NeutralLanguage>en</NeutralLanguage>
+		<ApplicationIcon>binary_icon_211573.ico</ApplicationIcon>
+		<Copyright>© Fondness 2022</Copyright>
+		<PackageIcon>binary_icon_211573.png</PackageIcon>
+		<Description>a simple high-performance string encryption and decryption tool based on given symmetric key</Description>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <Content Include="binary_icon_211573.ico" />
-  </ItemGroup>
+	<ItemGroup>
+		<Content Include="binary_icon_211573.ico" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\..\.assets\binary_icon_211573.png">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\.assets\binary_icon_211573.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+	</ItemGroup>
 
 </Project>
