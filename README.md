@@ -1,4 +1,4 @@
-# secure-string
+# secure string
 secure string with encryption
 ##Usage
 install this pakage using nuget package manager   
