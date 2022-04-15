@@ -1,15 +1,20 @@
 # Enigma
-secure string with encryption
+secure string with encryption based on symmetric key
 ##Usage
 install this pakage using nuget package manager   
-`PM> install-package wikiux.string.encryptor`   
-this is static string methods, you can call it directly as .ToEncrypt(); or .ToDecrypt();
+`PM> install-package Fondness.Enigma`   
+configure you application to use the engima encryption engin by configure the core service
 ```cs
-public void TestUsage()
+_services.AddEnigmaEncryption(options =>
 {
-    string text = "this is testing string";
-    string encryptedText = text.ToEncrypt();
-    string decryptedText = encryptedText.ToDecrypt();
-}
+    options.SymmetricKey = "b14ca5898a4e4133bbce2ea2315a1916";
+});
 ```
-&copy;Wikiux inc. by Eslam M. Tammam
+then you can use encryption and decryption extension as a string extension
+```cs
+string value = "Hello World!";
+var encryptedValue = value.Encrypt();
+
+var decryptValue = encryptedValue.Decrypt();
+```
+&copy;Fondness Open Source.
