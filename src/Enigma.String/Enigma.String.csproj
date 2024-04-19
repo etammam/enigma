@@ -1,10 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFrameworks>net8.0;net7.0;net6.0;net5.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<SignAssembly>False</SignAssembly>
+		<SignAssembly>True</SignAssembly>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>Fondness.Enigma</PackageId>
 		<Authors>Eslam M. Tammam</Authors>
@@ -12,7 +12,6 @@
 		<RepositoryUrl>https://github.com/etammam/enigma</RepositoryUrl>
 		<PackageTags>Encrypt, Decrypt, String, Cipher, Security</PackageTags>
 		<NeutralLanguage>en</NeutralLanguage>
-		<ApplicationIcon>binary_icon_211573.ico</ApplicationIcon>
 		<Copyright>© Fondness 2022</Copyright>
 		<PackageIcon>binary_icon_211573.png</PackageIcon>
 		<Description>a simple high-performance string encryption and decryption tool based on given symmetric key</Description>
@@ -20,11 +19,8 @@
 		<PackageVersion>1.0.2</PackageVersion>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageLicenseUrl>https://github.com/etammam/enigma/blob/master/LICENSE</PackageLicenseUrl>
+		<LangVersion>Latest</LangVersion>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<Content Include="binary_icon_211573.ico" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="..\..\.assets\binary_icon_211573.png">
@@ -38,8 +34,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>

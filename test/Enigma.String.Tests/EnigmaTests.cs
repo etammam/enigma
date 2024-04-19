@@ -32,7 +32,7 @@ namespace Enigma.String.Tests
         [Fact]
         public void Encrypt_WhenCalled_WithNullOrEmptySymmetricKey_ShouldThrowArgumentNullException()
         {
-            var value = "";
+            var value = "this-is-my-value";
             EnigmaExtension.SetOptions(new EnigmaOptions(string.Empty));
             Assert.Throws<ArgumentNullException>(value.Encrypt);
         }
@@ -49,7 +49,7 @@ namespace Enigma.String.Tests
         }
 
         [Theory]
-        [InlineData("this is not an base 64 string")]
+        [InlineData("this is not base 64 string")]
         public void Decrypt_WhenCalledWithNoneBase64String_ShouldThrowArgumentException(string value)
         {
             var isBase64 = value.IsBase64String();
