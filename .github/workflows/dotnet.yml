@@ -2,9 +2,11 @@ name: Fondness Enigma - CI
 
 on:
   push:
-    branches: *
+    branches: [ master ]
   pull_request:
     branches: [ master ]
+  workflow_dispatch:
+
 
 jobs:
   build:
