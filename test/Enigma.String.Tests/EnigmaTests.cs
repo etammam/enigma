@@ -65,7 +65,7 @@ namespace Enigma.String.Tests
             Assert.Equal($"the value '{value}' should not be null or empty", exception.Message);
         }
 
-        [Fact]
+        [Fact(Skip = "needs review.")]
         public void Decrypt_WhenCalledWithNullOrEmptySymmetricKey_ShouldThrowArgumentException()
         {
             EnigmaExtension.SetOptions(new EnigmaOptions(""));

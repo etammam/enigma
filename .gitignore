@@ -348,3 +348,22 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+
+lib/
+.nuget/
+project.lock.json
+*.nupkg
+/.nuke/temp/
+.automation/
+/tools/*/
+/tools/*.exe
+/tools/*.md5sum
+!tools/packages.config
+/scripts/
+src/Cake.Scripts/tools/tools/
+
+codealike.json
+
+*.received.*
+coverage/

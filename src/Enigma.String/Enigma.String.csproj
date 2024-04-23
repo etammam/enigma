@@ -24,8 +24,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\..\.assets\binary_icon_211573.png" Pack="true" Visible="false" PackagePath=""/>
-		<None Include="..\..\README.md" Pack="true" Visible="false" PackagePath=""/>
+		<None Include="..\..\.assets\binary_icon_211573.png" Pack="true" Visible="false" PackagePath="" />
+		<None Include="..\..\README.md" Pack="true" Visible="false" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
