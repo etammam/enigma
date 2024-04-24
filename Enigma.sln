@@ -1,15 +1,67 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enigma.String", "src\Enigma.String\Enigma.String.csproj", "{11DAC1DE-A155-4947-BCA8-41CD0B00E8CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADC6134A-7D1B-46CB-98C8-65BCE669C535}"
+	ProjectSection(SolutionItems) = preProject
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EDDAE623-4A7D-4411-B503-4D3C97F6547E}"
+	ProjectSection(SolutionItems) = preProject
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enigma.String.Tests", "test\Enigma.String.Tests\Enigma.String.Tests.csproj", "{3DDD2371-2725-464F-AB4B-5A18D987269D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enigma.String.Tests", "test\Enigma.String.Tests\Enigma.String.Tests.csproj", "{3DDD2371-2725-464F-AB4B-5A18D987269D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{24FA3266-BBE3-4A5A-B59F-6BAE794A0CF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{40E1B613-8C9E-48B5-823E-ECA7F376EB60}"
+	ProjectSection(SolutionItems) = preProject
+		build/Directory.Build.props = build/Directory.Build.props
+		build/Directory.Build.targets = build/Directory.Build.targets
+		build/.editorconfig = build/.editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{1DC62B68-F2FA-4F3F-B029-29ED1BFD72B0}"
+	ProjectSection(SolutionItems) = preProject
+		.config/dotnet-tools.json = .config/dotnet-tools.json
+		build.cmd = build.cmd
+		build.ps1 = build.ps1
+		build.sh = build.sh
+		LICENSE = LICENSE
+		README.md = README.md
+		.gitignore = .gitignore
+		.prettierignore = .prettierignore
+		.lintstagedrc.js = .lintstagedrc.js
+		package.json = package.json
+		GitReleaseManager.yaml = GitReleaseManager.yaml
+		azure-pipelines.nuke.yml = azure-pipelines.nuke.yml
+		.prettierrc = .prettierrc
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{B0110124-FD62-48FC-B213-E861A94B0BE5}"
+	ProjectSection(SolutionItems) = preProject
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{65907060-9966-48CD-B8C8-A3B3AE7955C2}"
+	ProjectSection(SolutionItems) = preProject
+		.github/workflows/dotnet.yml = .github/workflows/dotnet.yml
+		.github/workflows/release.yml = .github/workflows/release.yml
+		.github/workflows/ci-ignore.yml = .github/workflows/ci-ignore.yml
+		.github/workflows/ci.yml = .github/workflows/ci.yml
+		.github/workflows/lint.yml = .github/workflows/lint.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".husky", ".husky", "{9B234E5B-BFC7-4DDF-B1F3-844F3ED3AED1}"
+	ProjectSection(SolutionItems) = preProject
+		.husky/pre-commit = .husky/pre-commit
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vscode", ".vscode", "{D4D09950-4812-4FA6-A7BA-704753D7444C}"
+	ProjectSection(SolutionItems) = preProject
+		.vscode/settings.json = .vscode/settings.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +77,8 @@ Global
 		{3DDD2371-2725-464F-AB4B-5A18D987269D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DDD2371-2725-464F-AB4B-5A18D987269D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DDD2371-2725-464F-AB4B-5A18D987269D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FA3266-BBE3-4A5A-B59F-6BAE794A0CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FA3266-BBE3-4A5A-B59F-6BAE794A0CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +86,11 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{11DAC1DE-A155-4947-BCA8-41CD0B00E8CF} = {ADC6134A-7D1B-46CB-98C8-65BCE669C535}
 		{3DDD2371-2725-464F-AB4B-5A18D987269D} = {EDDAE623-4A7D-4411-B503-4D3C97F6547E}
+		{24FA3266-BBE3-4A5A-B59F-6BAE794A0CF2} = {40E1B613-8C9E-48B5-823E-ECA7F376EB60}
+		{B0110124-FD62-48FC-B213-E861A94B0BE5} = {1DC62B68-F2FA-4F3F-B029-29ED1BFD72B0}
+		{65907060-9966-48CD-B8C8-A3B3AE7955C2} = {B0110124-FD62-48FC-B213-E861A94B0BE5}
+		{9B234E5B-BFC7-4DDF-B1F3-844F3ED3AED1} = {1DC62B68-F2FA-4F3F-B029-29ED1BFD72B0}
+		{D4D09950-4812-4FA6-A7BA-704753D7444C} = {1DC62B68-F2FA-4F3F-B029-29ED1BFD72B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41117D47-78DD-444C-8060-6CE24D6D7F2C}
